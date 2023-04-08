@@ -8,6 +8,7 @@ const App = () => {
 
   const [input, setInput] = useState("");
   const [tasks, setTasks] = useState([]);
+  const [editTask, setEditTask] = useState(null);
 
   return (
     <div className='container'>
@@ -21,10 +22,16 @@ const App = () => {
             setInput={setInput}
             tasks={tasks}
             setTasks={setTasks}
+            editTask={editTask}
+            setEditTask={setEditTask}
           />
         </div>
         <div>
-          <TasksList tasks={tasks} setTasks={setTasks}/>
+          <TasksList
+            tasks={tasks}
+            setTasks={setTasks}
+            setEditTask={setEditTask}
+          />
         </div>
       </div>
     </div>
