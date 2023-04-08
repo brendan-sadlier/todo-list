@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Form from './components/Form';
@@ -6,9 +6,15 @@ import TasksList from './components/TasksList';
 
 const App = () => {
 
+  const initialState = JSON.parse(localStorage.getItem("tasks")) || [];
+
   const [input, setInput] = useState("");
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(initialState);
   const [editTask, setEditTask] = useState(null);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   return (
     <div className='container'>
