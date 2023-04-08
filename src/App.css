@@ -31,6 +31,7 @@ html, body {
     color: #fff;
     text-align: center;
     margin: 30px, 0;
+    margin-bottom: 30px;
 }
 
 .task-input {
@@ -39,8 +40,8 @@ html, body {
     padding: 15px;
     margin-right: 25px;
     font-size: 20px;
-    color: #ccc;
-    background-color: #000000;
+    color: #fff;
+    background-color: #393e46;
     border: 1px solid #198754;
     border-radius: 10px;
 }
@@ -53,15 +54,18 @@ html, body {
     border: 0;
     background-color: #198754;
     cursor: pointer;
+    color: #fff;
 }
 
 .list-item {
     display: flex;
+    margin-top: 10px;
     margin: 20px, 0;
     border: 1px solid #198754;
     border-radius: 10px;
     padding: 10px;
     max-height: 30px;
+    color: #fff;
 }
 
 .complete-button, .delete-button, .edit-button {
@@ -79,7 +83,7 @@ html, body {
 }
 
 .complete-button:hover {
-    color: #198754;
+    color: #60e550;
 }
 
 .edit-button:hover {
