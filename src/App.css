@@ -82,21 +82,22 @@ body {
 .edit-button {
   color: #333232;
   margin-left: 35px;
+  opacity: 0.5;
 }
 
 .complete-button:hover {
   color: #32a287;
-  font-size: 28px;
+  opacity: 1;
 }
 
 .edit-button:hover {
   color: #3066be;
-  font-size: 28px;
+  opacity: 1;
 }
 
 .delete-button:hover {
   color: #be3144;
-  font-size: 28px;
+  opacity: 1;
 }
 
 .complete {
@@ -114,8 +115,9 @@ body {
   background-color: #f2f7f2;
   border: none;
   color: #333232;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
+  font-family: "Caveat", cursive;
 }
 
 input:focus,
